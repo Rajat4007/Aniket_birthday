@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>A Letter for You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fcd5ce, #fae1dd);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .letter-box {
+      width: 90%;
+      max-width: 700px;
+      background: white;
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      color: #d62828;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.6em;
+      color: #333;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #d62828;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1.1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a91d1d;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Confetti JS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    confetti({
+      particleCount: 100,
+      spread: 150,
+      origin: { y: 0.5 },
+    });
+  </script>
+  <div class="letter-box">
+    <h2>Dear Aniket,</h2>
+    <p>
+      On this special day, I just wanted to remind you how truly amazing you are.<br>
+      Your kindness, your smile, and your energy light up every room you walk into.<br><br>
+      Wishing you a year full of happiness, success, laughter, and love.<br>
+      You deserve nothing but the best! 💫<br><br>
+      🎉 Happy Birthday once again! 🎉
+    </p>
+    <button onclick="window.location.href='photo.html'">Click for Another Surprise</button>
+  </div>
+
+</body>
+</html>
